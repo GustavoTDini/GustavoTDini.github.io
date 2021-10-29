@@ -10,7 +10,7 @@ playGame = async function (character, difficulty) {
     document.getElementById("canvas_div").style.display = "flex"
     let GAME_CANVAS = document.getElementById("game_canvas")
     GAME_CANVAS.style.display = "none"
-    HelperMethods.fullscreen.toggleFullScreen(GAME_CANVAS)
+    //HelperMethods.fullscreen.toggleFullScreen(GAME_CANVAS)
     let audioContext = new (window.AudioContext || window.webkitAudioContext)()
     await HelperMethods.draw.preloadImages(Images.imageFiles)
     await HelperMethods.sound.preloadSounds(Sounds.sounds, audioContext)
