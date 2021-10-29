@@ -221,16 +221,16 @@ h2{
 }
 
 #canvas_div {
-    width: 1280px;
-    height: 100%;
+    width: 90vh;
+    height: 90vh;
     display: none;
     margin: auto;
     flex-direction: column;
 }
 
 #game_canvas {
-    height: 720px;
-    width: 1280px;
+    height: 80vh;
+    width: 80vh;
     background-color: black;
     margin: auto;
 }
