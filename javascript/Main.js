@@ -15,9 +15,9 @@ playGame = async function (character, difficulty) {
     await HelperMethods.draw.preloadImages(Images.imageFiles)
     await HelperMethods.sound.preloadSounds(Sounds.sounds, audioContext)
     const width  = (window.innerWidth || document.documentElement.clientWidth ||
-        document.body.clientWidth)*0.8;
+        document.body.clientWidth);
     const height = (window.innerHeight|| document.documentElement.clientHeight||
-        document.body.clientHeight)*0.8;
+        document.body.clientHeight);
     GAME_CANVAS.width = width;
     GAME_CANVAS.height = height;
     let game = new Game()
