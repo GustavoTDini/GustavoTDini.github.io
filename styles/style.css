@@ -221,7 +221,7 @@ h2{
 }
 
 #canvas_div {
-    width: 90vh;
+    width: 90vw;
     height: 90vh;
     display: none;
     margin: auto;
@@ -230,7 +230,7 @@ h2{
 
 #game_canvas {
     height: 80vh;
-    width: 80vh;
+    width: 80vw;
     background-color: black;
     margin: auto;
 }
