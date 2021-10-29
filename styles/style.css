@@ -210,7 +210,7 @@ h2{
     display: flex;
     margin: 0;
     padding: 0;
-    width: 356px;
+    max-width: 356px;
     list-style-type: none;
     overflow: hidden;
 }
