@@ -14,8 +14,12 @@ playGame = async function (character, difficulty) {
     let audioContext = new (window.AudioContext || window.webkitAudioContext)()
     await HelperMethods.draw.preloadImages(Images.imageFiles)
     await HelperMethods.sound.preloadSounds(Sounds.sounds, audioContext)
-    GAME_CANVAS.width = 800;
-    GAME_CANVAS.height = 480;
+    const width  = (window.innerWidth || document.documentElement.clientWidth ||
+        document.body.clientWidth)*0.8;
+    const height = (window.innerHeight|| document.documentElement.clientHeight||
+        document.body.clientHeight)*0.8;
+    GAME_CANVAS.width = width;
+    GAME_CANVAS.height = height;
     let game = new Game()
     GAME_CANVAS.style.display = "block"
     document.getElementById("loading").style.display = "none";
